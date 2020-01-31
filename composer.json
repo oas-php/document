@@ -1,0 +1,41 @@
+{
+  "name": "oas-php/document",
+  "description": "Object representation of Open API document",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kuba Biernacki",
+      "email": "kubiernacki@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "nikic/iter": "^2.0",
+    "psr/http-factory": "^1.0",
+    "nikic/php-parser": "^4.10",
+    "biera/array-accessor": "1.0.1",
+    "oas-php/utils": "dev-master",
+    "oas-php/resolver": "dev-master",
+    "oas-php/schema": "dev-master",
+    "oas-php/validator": "dev-master"
+  },
+  "suggest": {
+    "guzzlehttp/psr7": "^1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "OAS\\": "src/"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "require-dev": {
+    "symfony/yaml": "^5.0",
+    "phpunit/phpunit": "^8.5",
+    "cache/array-adapter": "^1.0",
+    "guzzlehttp/psr7": "^1.0",
+    "oas-php/sample": "dev-master"
+  }
+}
